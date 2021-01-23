@@ -1,0 +1,1 @@
+export const API_SERVER_PAGE = (id:number) => `http://127.0.0.1:8080/https://xkcd.com/${id}/info.0.json`;

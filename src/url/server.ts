@@ -1,0 +1,1 @@
+export const API_SERVER_LATEST = 'http://127.0.0.1:8080/https://xkcd.com/info.0.json';
