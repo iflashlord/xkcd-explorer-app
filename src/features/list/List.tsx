@@ -55,7 +55,7 @@ export function List(props: IListProps) {
       }
 
       {stripState === 'succeeded' && stripTotalItems && props.match.params.currentPage && 
-        <ul className='flex flex-wrap mb-20'>
+        <ul className='flex flex-wrap mb-20 w-screen md:w-auto'>
           {
             (Array.from(Array(ITEMS_PER_PAGE))).map((_, itemNumber) => {
 

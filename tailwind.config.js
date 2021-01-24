@@ -5,12 +5,8 @@ module.exports = {
         extend: {},
     },
     variants: {
-        opacity: ({ after }) => after(['disabled']),
         extend: {
-            backgroundColor: [
-                'odd',
-                'even',
-            ],
+            opacity: ['hover', 'focus', 'disabled'],
             pointerEvents: ['hover', 'focus', 'disabled'],
             outline: ['hover', 'active'],
             display: ['hover', 'focus', 'disabled'],

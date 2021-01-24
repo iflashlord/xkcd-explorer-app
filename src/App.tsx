@@ -23,7 +23,7 @@ function App() {
 
   return (
     <section>
-      <div className='max-w-6xl mx-auto px-5 py-14'>
+      <div className='max-w-6xl mx-auto md:px-5 pt-14 md:pb-14'>
 
         <Suspense fallback={
 
@@ -33,7 +33,6 @@ function App() {
             <span className='comic-box2 p-5 text-xl'>Loading...</span>
             
             </div>
-
 
         }>
           <Router>
@@ -51,9 +50,7 @@ function App() {
               <Redirect to='/not-found' />
 
             </Switch>
-
-            {/* <Footer /> */}
-
+ 
           </Router>
         </Suspense>
 

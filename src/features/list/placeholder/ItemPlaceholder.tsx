@@ -8,7 +8,7 @@ interface IItemPlaceholderProps {
 export function ItemPlaceholder(props: IItemPlaceholderProps) {
     const randomNumberBetween1to3 = randomFromInterval(1,3);
     return (
-        <li className='p-10  w-screen sm:w-screen md:w-1/2 2xl:w-1/3 mb-6 flex flex-col cursor-wait select-none'>
+        <li className='p-5 w-screen sm:w-screen md:w-1/2 2xl:w-1/3 flex flex-col cursor-wait select-none'>
 
             <div className={`bg-black text-gray-200 comic-box${randomNumberBetween1to3}`}>
                 <div className={` bg-gray-500 p-4 comic-box${randomNumberBetween1to3}`}>

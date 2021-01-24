@@ -16,7 +16,7 @@ export function Pagination(props: IPaginationProps) {
  
   const currentPageNumber = Number(props.currentPage);
   return (
-    <section className='bg-gray-500 text-white py-3 px-4 text-center fixed left-0 bottom-0 right-0 z-40 comic-footer'>
+    <section className='relative md:fixed bg-gray-500 text-white py-3 px-4 text-center left-0 bottom-0 right-0 z-40 comic-footer'>
 
         <div className='inline-flex items-center flex-wrap flex-auto'>
             
