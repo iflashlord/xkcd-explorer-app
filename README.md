@@ -2,6 +2,10 @@
 
 A simplistic XKCD strip explorer application.
 
+## Online Demo
+
+<https://xkcd-explorer-app.herokuapp.com/>
+
 ## How to Use
 
 In the project directory, you can run:
@@ -13,6 +17,7 @@ Install all dependencies to run and build the project.
 ### `npm run-script cros`
 
 Runs a simple server to solve the CROS limitation.
+I have used another alternative way to solve the CROS problem on the online version using a proxy server that serves the same data but without CROS limitation. <https://github.com/mrmartineau/xkcd-api>
 
 ### `npm start`
 
@@ -90,7 +95,7 @@ Build your software in such a way that you and your colleagues can build on it a
     * Clean Code
     * Comments
     * Typescript
-    * TODO : Tests
+    * TODO : Unit Tests
 
 Deploy this some place of your choice or describe how you would do so
 
