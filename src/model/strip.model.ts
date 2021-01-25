@@ -1,3 +1,4 @@
+// Strip JSON data model
 export interface IStripData {
   num:        number;
   title:      string;

@@ -12,6 +12,7 @@ export function Placeholder(props: IPlaceholderProps) {
 
                     <div className='text-center leading-none flex w-full justify-end z-10 '>
 
+                        {/* bars view with a animated effect */}
                         <div className='text-center max-w-lg mx-auto animate-pulse w-full'>
                             <div className='h-4 bg-gray-500 w-80 block mx-auto'></div>
                             <div className='h-3 bg-gray-400 w-70 mt-4 block mx-auto'></div>

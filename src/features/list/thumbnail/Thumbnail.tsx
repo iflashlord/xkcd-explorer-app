@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
 import { IStripData } from '../../../model/strip.model';
-import { API_SERVER_PAGE } from '../../../url/thumbnail';
+import { API_THUMBNAIL } from '../../../url/thumbnail';
 import { errorHandler } from '../../../utils/errorsHandler';
 import { ItemPlaceholder } from '../placeholder/ItemPlaceholder';
 import { ItemThumbnail } from './ItemThumbnail';
@@ -24,7 +24,7 @@ export function Thumbnail(props: IThumbnailProps) {
         setThumbnailState('loading');
 
         axios
-            .get<IStripData>(API_SERVER_PAGE(props.id), {
+            .get<IStripData>(API_THUMBNAIL(props.id), {
                 cancelToken: source.token,
                 headers: {
                     'Content-Type': 'application/json'

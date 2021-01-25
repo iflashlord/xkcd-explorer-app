@@ -122,3 +122,11 @@ The other vital factor is about being responsive and accessible on different dev
 ## User interface
 
 Having a design match with project context is one of my approaches in any creative project. I have always done my best to think out of the box and find a way to match the web page design fit with the project's context. I have used some random CSS styles like borders and some flat and frank colors to check with the comic strip styles in this project.
+
+## Screenshots
+
+![Alt text](screenshots/1.png?raw=true)
+![Alt text](screenshots/2.png?raw=true)
+![Alt text](screenshots/3.png?raw=true)
+![Alt text](screenshots/4.png?raw=true)
+![Alt text](screenshots/5.png?raw=true)

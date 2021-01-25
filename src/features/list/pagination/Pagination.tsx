@@ -8,6 +8,7 @@ import { ReactComponent as ArrowPrev } from '../../../assets/arrow-prev.svg';
 import { ReactComponent as ArrowFirst } from '../../../assets/arrow-first.svg';
 import { ReactComponent as ArrowNext } from '../../../assets/arrow-next.svg';
 import { ReactComponent as ArrowLast } from '../../../assets/arrow-last.svg';
+import { TEXT_FIRST_PAGE, TEXT_LAST_PAGE, TEXT_NEXT_PAGE, TEXT_PREVIOUS_PAGE } from '../../../config/texts';
 
 interface IPaginationProps extends RouteComponentProps { currentPage: string; }
 export function Pagination(props: IPaginationProps) {
@@ -20,7 +21,8 @@ export function Pagination(props: IPaginationProps) {
 
         <div className='inline-flex items-center flex-wrap flex-auto'>
             
-            <button title='First Page' className='comic-box2 transition duration-200 mx-5 px-4 py-3 cursor-pointer font-bold text-xl bg-gray-100 text-black hover:bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 disabled:hidden sm:disabled:inline-block sm:disabled:opacity-20 sm:disabled:pointer-events-none'
+            {/* First Button */}
+            <button title={TEXT_FIRST_PAGE} className='comic-box2 transition duration-200 mx-5 px-4 py-3 cursor-pointer font-bold text-xl bg-gray-100 text-black hover:bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 disabled:hidden sm:disabled:inline-block sm:disabled:opacity-20 sm:disabled:pointer-events-none'
             onClick={()=>{
                 props.history.push(`/1`)
             }}
@@ -28,8 +30,8 @@ export function Pagination(props: IPaginationProps) {
                 <ArrowFirst className='w-6 h-6'/>
             </button>
 
-
-            <button title='Previous Page' className='comic-box2 transition duration-200 mx-5 px-4 py-3 cursor-pointer font-bold text-xl bg-gray-100 text-black hover:bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 disabled:hidden sm:disabled:inline-block sm:disabled:opacity-20 sm:disabled:pointer-events-none'
+            {/* Previous Button */}
+            <button title={TEXT_PREVIOUS_PAGE} className='comic-box2 transition duration-200 mx-5 px-4 py-3 cursor-pointer font-bold text-xl bg-gray-100 text-black hover:bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 disabled:hidden sm:disabled:inline-block sm:disabled:opacity-20 sm:disabled:pointer-events-none'
             onClick={()=>{
                 props.history.push(`/${currentPageNumber - 1}`)
             }}
@@ -38,13 +40,14 @@ export function Pagination(props: IPaginationProps) {
             </button>
             
             
-
+            {/* Current Page */}
             <div className='comic-box2 transition duration-200 mx-5 px-4 py-3 font-bold text-2xl text-gray-100 bg-black select-none'>
                 {props.currentPage || 1}
             </div>
 
  
-            <button title='Next Page' className='comic-box2 transition duration-200 mx-5 px-4 py-3 cursor-pointer font-bold text-xl bg-gray-100 text-black hover:bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 disabled:hidden sm:disabled:inline-block sm:disabled:opacity-20 sm:disabled:pointer-events-none'
+            {/* Next Button */}
+            <button title={TEXT_NEXT_PAGE} className='comic-box2 transition duration-200 mx-5 px-4 py-3 cursor-pointer font-bold text-xl bg-gray-100 text-black hover:bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 disabled:hidden sm:disabled:inline-block sm:disabled:opacity-20 sm:disabled:pointer-events-none'
             onClick={()=>{
                 props.history.push(`/${currentPageNumber + 1}`)
             }}
@@ -52,8 +55,8 @@ export function Pagination(props: IPaginationProps) {
                 <ArrowNext className='w-6 h-6'/>
             </button>
 
-
-            <button title='Last Page' className='comic-box2 transition duration-200 mx-5 px-4 py-3 cursor-pointer font-bold text-xl bg-gray-100 text-black hover:bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 disabled:hidden sm:disabled:inline-block sm:disabled:opacity-20 sm:disabled:pointer-events-none'
+            {/* Last Button */}
+            <button title={TEXT_LAST_PAGE} className='comic-box2 transition duration-200 mx-5 px-4 py-3 cursor-pointer font-bold text-xl bg-gray-100 text-black hover:bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 disabled:hidden sm:disabled:inline-block sm:disabled:opacity-20 sm:disabled:pointer-events-none'
             onClick={()=>{
                 props.history.push(`/${stripTotalPages}`)
             }}

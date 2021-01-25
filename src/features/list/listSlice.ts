@@ -3,9 +3,9 @@ import axios from 'axios';
 
 import { AppThunk, RootState } from '../../state/strip.store';
 import { IListState, IStripData } from '../../model/strip.model'
-import { API_SERVER_LATEST } from '../../url/server'
 import { ITEMS_PER_PAGE } from '../../config/config';
 import { errorHandler } from '../../utils/errorsHandler';
+import { API_LIST } from '../../url/list';
 
 const initialState: IListState = {
   value: null,
@@ -46,7 +46,7 @@ export const {
 export const fetchData = (): AppThunk => dispatch => {
   dispatch(updateStatus('loading'));
     axios
-      .get<IStripData>(API_SERVER_LATEST, {
+      .get<IStripData>(API_LIST, {
         headers: {
           'Content-Type': 'application/json'
         },

@@ -3,6 +3,7 @@ import { RouteComponentProps } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import { selectStripDataError, selectStripDataState } from '../list/listSlice';
+import { TEXT_SUB_TITLE, TEXT_TITLE } from '../../config/texts';
 
 interface IHeaderProps extends RouteComponentProps { }
 
@@ -22,8 +23,14 @@ export function Header(props: IHeaderProps) {
             }
           }>
 
-          <h2 className='font-extrabold tracking-tight text-6xl'>XKCD Explorer</h2>
-          <h3 className='font-bold tracking-tight text-2xl'>A webcomic of romance, sarcasm, math, and language.</h3>
+          <h2 className='font-extrabold tracking-tight text-6xl'>
+            {TEXT_TITLE}
+          </h2>
+
+          <h3 className='font-bold tracking-tight text-2xl'>
+            {TEXT_SUB_TITLE}
+          </h3>
+          
         </div>
       
       </div>

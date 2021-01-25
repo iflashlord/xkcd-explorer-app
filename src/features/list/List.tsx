@@ -38,6 +38,7 @@ export function List(props: IListProps) {
       }
 
     } else {
+      
       // get latest item
       dispatch(fetchData())
 

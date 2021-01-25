@@ -1,4 +1,5 @@
 import React from 'react';
+import { TEXT_LOADING } from '../../../config/texts';
 
 import { randomFromInterval } from '../../../utils/general';
 
@@ -13,6 +14,7 @@ export function ItemPlaceholder(props: IItemPlaceholderProps) {
             <div className={`bg-black text-gray-200 comic-box${randomNumberBetween1to3}`}>
                 <div className={` bg-gray-500 p-4 comic-box${randomNumberBetween1to3}`}>
 
+                    {/* bars view with a animated effect */}
                     <div className='text-center max-w-lg mx-auto mt-1 animate-pulse'>
                         <div className='h-4 bg-gray-800 w-40 block mx-auto'></div>
                         <div className='h-3 bg-gray-900 w-64 mt-5 block mx-auto'></div>
@@ -23,9 +25,7 @@ export function ItemPlaceholder(props: IItemPlaceholderProps) {
 
                     <h2 className='text-2xl title-font font-extrabold mb-3 mt-10 animate-pulse'>
                         <div className={`backdrop truncate comic-box${randomNumberBetween1to3}`}>
-                            {props.error ? props.error : 'Loading...'}
-                            
-
+                            {props.error ? props.error : TEXT_LOADING}
                         </div>
                     </h2>
                 </div>

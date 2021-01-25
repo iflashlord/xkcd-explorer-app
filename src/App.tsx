@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect, withRouter } from 'react-router-dom'
+import { TEXT_LOADING } from './config/texts';
 import { Header } from './features/header/Header';
 
 function App() {
@@ -27,10 +28,11 @@ function App() {
 
         <Suspense fallback={
 
-
           <div className='flex h-screen justify-center items-center '>
             
-            <span className='comic-box2 p-5 text-xl'>Loading...</span>
+            <span className='comic-box2 p-5 text-xl'>
+              {TEXT_LOADING}
+            </span>
             
             </div>
 

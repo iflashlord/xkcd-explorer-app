@@ -1,0 +1,17 @@
+export const TEXT_TITLE = 'XKCD Explorer';
+export const TEXT_SUB_TITLE = 'A webcomic of romance, sarcasm, math, and language.';
+export const TEXT_LOADING = 'Loading...';
+export const TEXT_BACK_TO_HOME = 'Back to Home';
+export const TEXT_BACK_TO_LIST = 'Back to List';
+export const TEXT_ERROR_404 = '404 - Page not found!';
+export const TEXT_IMAGE_ONLY = 'Image Only!';
+export const TEXT_DID_NOT_CATCH = 'I did not catch the drift!';
+export const TEXT_LINK = 'Link';
+export const TEXT_PREVIOUS_STRIP = 'Previous Strip';
+export const TEXT_NEXT_STRIP = 'Next Strip';
+export const TEXT_WAIT_TO_RETRIEVE = 'Please wait for retrieving data...';
+export const TEXT_DATE = 'Date';
+export const TEXT_FIRST_PAGE = 'First Page';
+export const TEXT_LAST_PAGE = 'Last Page';
+export const TEXT_NEXT_PAGE = 'Next Page';
+export const TEXT_PREVIOUS_PAGE = 'Previous Page';
