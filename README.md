@@ -19,6 +19,8 @@ Install all dependencies to run and build the project.
 Runs a simple server to solve the CROS limitation.
 I have used another alternative way to solve the CROS problem on the online version using a proxy server that serves the same data but without CROS limitation. <https://github.com/mrmartineau/xkcd-api>
 
+There are two ways provided in `url/server.ts`; you can use the CROS server and change the API_SERVER variable to `http://127.0.0.1:8080/https://xkcd.com` or use an online proxy server and change it to `https://xkcd.now.sh`. Because of the different structure on getting data, you should change both `url/list.ts` and `url.thumbnail.ts` for any case based on the provided help in that files.  
+
 ### `npm start`
 
 Runs the app in the development mode.

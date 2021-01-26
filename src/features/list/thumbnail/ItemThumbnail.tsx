@@ -27,7 +27,7 @@ export function ItemThumbnail(props: IItemThumbnailProps) {
 
 
                         {/* Item ID */}
-                        <span className={`fixed top-3 right-5 text-2xl mt-2 leading-none flex justify-end z-10 text-gray-200 font-extrabold backdrop comic-box${randomNumberBetween1to3}`}>
+                        <span className={`absolute top-3 right-5 text-2xl mt-2 leading-none flex justify-end z-10 text-gray-200 font-extrabold backdrop comic-box${randomNumberBetween1to3}`}>
                             #{props.data.num}
                         </span>
 

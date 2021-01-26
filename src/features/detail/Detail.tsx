@@ -90,15 +90,17 @@ export function Detail(props: IDetailProps) {
             <div className='w-full p-10  md:mb-0 mb-6 flex flex-col transform hover:scale-105 duration-300 ease-in-out comic-box3 comic-zero-rotate'>
                 <div className={`bg-black text-gray-200`}>
 
+                    {/* Date */}
+                    <span className={`relative w-2/3 md:w-auto inline-block md:absolute md:top-3 md:left-5 p-1 text-center text-2xl mt-2 leading-2 z-10 text-gray-200 font-extrabold bg-black comic-box2 select-none`}>
+                        {TEXT_DATE}: <Moment format='LL'>{`${detailData.year}-${detailData.month}-${detailData.day}`}</Moment>
+                    </span>
+
+
                     {/* Item ID */}
-                    <span className={`relative md:fixed md:top-3 md:right-5 p-1 text-center  text-2xl mt-2 leading-2 z-10 text-gray-200 font-extrabold bg-black comic-box1 select-none`}>
+                    <span className={`relative w-1/3 md:w-auto inline-block md:absolute md:top-3 md:right-5 p-1 text-center text-2xl mt-2 leading-2 z-10 text-gray-200 font-extrabold bg-black comic-box1 select-none`}>
                         #{detailData.num}
                     </span>
 
-                    {/* Date */}
-                    <span className={`relative md:fixed md:top-3 md:left-5 p-1 text-center text-2xl mt-2 leading-2 z-10 text-gray-200 font-extrabold bg-black comic-box2 select-none`}>
-                        {TEXT_DATE}: <Moment format='LL'>{`${detailData.year}-${detailData.month}-${detailData.day}`}</Moment>
-                    </span>
 
                     {/* Image Section */}
                     <div className='flex justify-center bg-gray-500 p-4 bg-cover bg-no-repeat bg-center comic-box2 comic-zero-rotate' >
