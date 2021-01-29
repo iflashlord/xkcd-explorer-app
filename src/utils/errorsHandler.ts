@@ -23,7 +23,7 @@ export function errorHandler(error: AxiosError): string {
           break;
   
         case 429:
-          errorMessage = 'CROS Domain Error!'
+          errorMessage = 'CORS Domain Error!'
           break
   
         case 400:
