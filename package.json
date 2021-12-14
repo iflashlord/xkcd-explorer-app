@@ -22,7 +22,7 @@
         "react-redux": "^7.2.0",
         "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.1",
-        "typescript": "~3.8.2",
+        "typescript": "~3.9.10",
         "tailwindcss": "^2.0.2",
         "postcss": "8.x",
         "postcss-cli": "8.x",
