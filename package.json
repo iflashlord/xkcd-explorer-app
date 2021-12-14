@@ -23,7 +23,7 @@
         "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.1",
         "typescript": "~3.8.2",
-        "tailwindcss": "^2.0.2",
+        "tailwindcss": "^2.2.19",
         "postcss": "8.x",
         "postcss-cli": "8.x",
         "postcss-preset-env": "6.x"
