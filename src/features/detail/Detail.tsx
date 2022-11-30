@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { RouteComponentProps, useLocation } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Moment from 'react-moment';
 import axios from 'axios';
+import moment from 'moment';
 
 import { Placeholder } from './placeholder/Placeholder';
 import { errorHandler } from '../../utils/errorsHandler';
@@ -92,7 +92,7 @@ export function Detail(props: IDetailProps) {
 
                     {/* Date */}
                     <span className={`relative w-2/3 md:w-auto inline-block md:absolute md:top-3 md:left-5 p-1 text-center text-2xl mt-2 leading-2 z-10 text-gray-200 font-extrabold bg-black comic-box2 select-none`}>
-                        {TEXT_DATE}: <Moment format='LL'>{`${detailData.year}-${detailData.month}-${detailData.day}`}</Moment>
+                        {TEXT_DATE}: {moment(`${detailData.year}-${detailData.month}-${detailData.day}`).format('MMMM Do YYYY')} 
                     </span>
 
 
