@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@reduxjs/toolkit": "^1.2.5",
+        "@reduxjs/toolkit": "^1.6.0",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
@@ -13,7 +13,7 @@
         "@types/react-dom": "^16.9.10",
         "@types/react-redux": "^7.1.15",
         "@types/react-router-dom": "^5.1.7",
-        "axios": "^0.21.1",
+        "axios": "^0.21.3",
         "cors-anywhere": "^0.4.3",
         "moment": "^2.29.4",
         "react": "^17.0.1",
@@ -23,8 +23,8 @@
         "react-router-dom": "^5.2.0",
         "react-scripts": "5.0.0",
         "typescript": "~3.8.2",
-        "tailwindcss": "^2.0.2",
-        "postcss": "8.x",
+        "tailwindcss": "^2.2.0",
+        "postcss": "8.2.13",
         "postcss-cli": "8.x",
         "postcss-preset-env": "6.x"
     },
