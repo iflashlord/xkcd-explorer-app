@@ -23,9 +23,9 @@
         "react-scripts": "5.0.1",
         "typescript": "~4.9.3",
         "tailwindcss": "^2.2.0",
-        "postcss": "8.4.19",
+        "postcss": "8.4.31",
         "postcss-cli": "10.x",
-        "postcss-preset-env": "7.x"
+        "postcss-preset-env": "9.1.4"
     },
     "scripts": {
         "build:tailwind": "tailwindcss build src/index.css -o src/tailwind.output.css",
