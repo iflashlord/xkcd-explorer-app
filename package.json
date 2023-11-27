@@ -25,7 +25,7 @@
         "tailwindcss": "^2.2.0",
         "postcss": "8.4.19",
         "postcss-cli": "10.x",
-        "postcss-preset-env": "7.x"
+        "postcss-preset-env": "7.0.0"
     },
     "scripts": {
         "build:tailwind": "tailwindcss build src/index.css -o src/tailwind.output.css",
