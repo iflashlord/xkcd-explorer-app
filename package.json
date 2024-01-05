@@ -13,7 +13,7 @@
         "@types/react-dom": "^16.9.10",
         "@types/react-redux": "^7.1.15",
         "@types/react-router-dom": "^5.1.7",
-        "axios": "^1.2.0",
+        "axios": "^1.6.4",
         "cors-anywhere": "^0.4.4",
         "moment": "^2.29.4",
         "react": "^17.0.2",
