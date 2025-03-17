@@ -5,7 +5,7 @@
     "dependencies": {
         "@reduxjs/toolkit": "^1.9.1",
         "@testing-library/jest-dom": "^5.16.5",
-        "@testing-library/react": "^13.4.0",
+        "@testing-library/react": "^14.0.0",
         "@testing-library/user-event": "^14.4.3",
         "@types/jest": "^29.2.3",
         "@types/node": "^18.11.9",
@@ -24,7 +24,7 @@
         "typescript": "~4.9.3",
         "tailwindcss": "^2.2.0",
         "postcss": "8.4.19",
-        "postcss-cli": "10.x",
+        "postcss-cli": "11.0.1",
         "postcss-preset-env": "7.x"
     },
     "scripts": {
